@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --primary-blue-color: hsl(246, 80%, 60%);
+  --primary-soft-blue-play: hsl(195, 74%, 62%);
+  --primary-light-red-work: hsl(15, 100%, 70%);
+  --primary-light-red-study: hsl(348, 100%, 68%);
+  --primary-light-green-exercise: hsl(145, 58%, 55%);
+  --primary-violet-social: hsl(264, 64%, 52%);
+  --primary-soft-orange-selfcare: hsl(43, 84%, 65%);
+
+  --neutral-very-dark-blue: hsl(226, 43%, 10%);
+  --neutral-dark-blue: hsl(235, 46%, 20%);
+  --neutral-desaturated-blue: hsl(235, 45%, 61%);
+  --neutral-pale-blue: hsl(236, 100%, 87%);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  line-height: calc(1rem + 0.5rem);
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  background-color: var(--neutral-very-dark-blue);
+}
+
+button {
+  display: inline-block;
+  padding: 0.25rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--neutral-desaturated-blue);
+  font-size: 1.025rem;
+  /* border: 1px solid green; */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  border: 1px solid red;
+}
+
+.cards {
+  background-color: var(--neutral-dark-blue);
+  width: 90%;
+  margin: 0 auto;
+  /* padding: 1em; */
+  /* border: 1px solid red; */
+  border-radius: 12px;
+}
+
+.profile__card__wrapper {
+  margin-top: 2.5em;
+}
+
+.profile__card {
+  background-color: var(--primary-blue-color);
+  width: 100%;
+  border-radius: 12px;
+  display: flex;
+  gap: 1em;
+  padding: 1.5rem;
+  align-items: center;
+}
+
+.profile__card img {
+  max-width: 100px;
+  width: 25%;
+  border: 3px solid #fff;
+  border-radius: 180px;
+}
+
+.profile__card__title p {
+  font-weight: 500;
+  color: var(--neutral-desaturated-blue);
+}
+
+.profile__card__title h2 {
+  color: var(--neutral-pale-blue);
+  font-weight: 300;
+}
+
+.card__options {
+  /* border: 1px solid red; */
+  padding: 1.2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+/* Provided by Frontend Mentor */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
