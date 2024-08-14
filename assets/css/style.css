@@ -36,14 +36,20 @@ button {
   cursor: pointer;
   color: var(--neutral-desaturated-blue);
   font-size: 1.025rem;
-  /* border: 1px solid green; */
+}
+
+button:hover {
+  color: var(--neutral-pale-blue);
+}
+
+.more-button {
+  cursor: pointer;
 }
 
 .container {
   display: flex;
   flex-direction: column;
   gap: 2em;
-  border: 1px solid red;
 }
 
 .cards {
@@ -51,7 +57,7 @@ button {
   width: 90%;
   margin: 0 auto;
   /* padding: 1em; */
-  /* border: 1px solid red; */
+
   border-radius: 12px;
 }
 
@@ -86,7 +92,6 @@ button {
 }
 
 .card__options {
-  /* border: 1px solid red; */
   padding: 1.2rem;
   display: flex;
   gap: 1rem;
@@ -184,7 +189,6 @@ button {
 
 @media (min-width: 510px) {
   .card__info {
-    /* border: 1px solid red; */
     padding: 0.3rem;
   }
 }
@@ -192,8 +196,6 @@ button {
 @media (min-width: 768px) {
   .main {
     height: 90vh;
-    /* display: grid;
-    place-content: center; */
   }
 
   .container {
@@ -268,7 +270,7 @@ button {
   }
 
   .card__info p {
-    font-size: 0.7rem;
+    font-size: 0.87rem;
     color: var(--neutral-desaturated-blue);
   }
 }
