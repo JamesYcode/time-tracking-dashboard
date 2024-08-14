@@ -60,7 +60,6 @@ button {
 }
 
 .profile__card {
-  background-color: var(--primary-blue-color);
   width: 100%;
   border-radius: 12px;
   display: flex;
@@ -92,6 +91,186 @@ button {
   display: flex;
   gap: 1rem;
   justify-content: space-between;
+}
+
+/* Activities Card background color */
+.profile__card__activities__2 {
+  background-color: var(--primary-light-red-work);
+}
+
+.profile__card__activities__3 {
+  background-color: var(--primary-soft-blue-play);
+}
+
+.profile__card__activities__4 {
+  background-color: var(--primary-light-red-study);
+}
+
+.profile__card__activities__5 {
+  background-color: var(--primary-light-green-exercise);
+}
+
+.profile__card__activities__6 {
+  background-color: var(--primary-violet-social);
+}
+
+.profile__card__activities__7 {
+  background-color: var(--primary-soft-orange-selfcare);
+}
+
+.card__details {
+  border-radius: 10px;
+  background-color: var(--neutral-dark-blue);
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+  justify-content: space-between;
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__info h4 {
+  font-size: 1.2rem;
+  color: var(--neutral-pale-blue);
+  font-weight: 400;
+  font-family: var();
+}
+
+.card__info p {
+  font-size: 1.025rem;
+  color: var(--neutral-desaturated-blue);
+}
+
+/* Individual Cards */
+
+.profile__card__1 {
+  background-color: var(--primary-blue-color);
+}
+.profile__card__2 {
+  background-image: url('/assets/images/icon-work.svg');
+  background-repeat: no-repeat;
+  background-position: right top 40%;
+}
+.profile__card__3 {
+  background-image: url('/assets/images/icon-play.svg');
+  background-repeat: no-repeat;
+  background-position: right top 40%;
+}
+.profile__card__4 {
+  background-image: url('/assets/images/icon-study.svg');
+  background-repeat: no-repeat;
+  background-position: right top 40%;
+}
+.profile__card__5 {
+  background-image: url('/assets/images/icon-exercise.svg');
+  background-repeat: no-repeat;
+  background-position: right top 40%;
+}
+.profile__card__6 {
+  background-image: url('/assets/images/icon-social.svg');
+  background-repeat: no-repeat;
+  background-position: right top 40%;
+}
+.profile__card__7 {
+  background-image: url('/assets/images/icon-self-care.svg');
+  background-repeat: no-repeat;
+  background-position: right top 40%;
+}
+
+@media (min-width: 510px) {
+  .card__info {
+    /* border: 1px solid red; */
+    padding: 0.3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    height: 90vh;
+    /* display: grid;
+    place-content: center; */
+  }
+
+  .container {
+    display: grid;
+    max-width: 1440px;
+    margin: 25vh auto 0 auto;
+    place-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .profile__card__wrapper {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-top: initial;
+    max-width: 250px;
+  }
+
+  .profile__card {
+    border-radius: 12px;
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-start;
+  }
+
+  .profile__card__1 {
+    height: 300px;
+  }
+
+  .profile__card img {
+    width: 50%;
+  }
+
+  .profile__card__title p {
+    font-weight: 300;
+    color: var(--neutral-pale-blue);
+    font-size: 0.8rem;
+  }
+
+  .profile__card__title h2 {
+    font-size: 2rem;
+    line-height: 2rem;
+    width: 7ch;
+  }
+
+  .card__options {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /*  */
+
+  .card__details {
+    height: 170px;
+  }
+
+  .card__info h4 {
+    font-size: 1rem;
+  }
+
+  .card__hours {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .card__hours h4 {
+    font-size: 2.5rem;
+    font-weight: 300;
+  }
+
+  .card__info p {
+    font-size: 0.7rem;
+    color: var(--neutral-desaturated-blue);
+  }
 }
 
 /* Provided by Frontend Mentor */
